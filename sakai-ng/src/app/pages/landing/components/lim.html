@@ -1,0 +1,353 @@
+<div class="portfolio-shell" [class.is-dark]="isDark()">
+    <header class="site-header">
+        <div class="container header-inner">
+            <button class="brand-button" type="button" (click)="navigateToSection('home')">
+                Brian<span>Lim</span>
+            </button>
+
+            <nav class="site-nav" aria-label="Primary">
+                @for (item of navItems; track item.fragment) {
+                    <button class="nav-link" type="button" (click)="navigateToSection(item.fragment)">{{ item.label }}</button>
+                }
+            </nav>
+
+            <button class="theme-toggle" type="button" (click)="toggleTheme()" [attr.aria-label]="isDark() ? 'Switch to light mode' : 'Switch to dark mode'">
+                <i [class]="isDark() ? 'pi pi-sun' : 'pi pi-moon'"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Portfolio</p>
+                    <h1>Brian Lim</h1>
+                    <h2>Full Stack Developer</h2>
+                    <p class="hero-description">
+                        Passionate about creating beautiful and functional web applications. Specialized in modern web technologies and clean
+                        code practices.
+                    </p>
+
+                    <div class="hero-actions">
+                        <button class="button-primary" type="button" (click)="navigateToSection('projects')">
+                            View My Work
+                            <i class="pi pi-arrow-right"></i>
+                        </button>
+                        <button class="button-secondary" type="button" (click)="navigateToSection('contact')">Contact Me</button>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-ring">
+                        <div class="profile-photo" role="img" aria-label="Brian Lim portrait"></div>
+                        <span class="profile-badge">A+</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll-cue" type="button" (click)="navigateToSection('about')">
+                <span>Scroll Down</span>
+                <i class="pi pi-angle-down"></i>
+            </button>
+        </section>
+
+        <section class="stats-section">
+            <div class="container responsive-grid stats-grid">
+                @for (item of stats; track item.label) {
+                    <article class="stat-card span-12 sm-span-6 lg-span-3">
+                        <strong>{{ item.value }}</strong>
+                        <span>{{ item.label }}</span>
+                    </article>
+                }
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container about-content">
+                <div class="about-heading">
+                    <p class="section-kicker">About</p>
+                    <h3>About Me</h3>
+                    <div class="title-underline title-underline--center"></div>
+                </div>
+
+                <article class="about-copy-card">
+                    <h4>Brian Lim</h4>
+                    <p class="about-role">Full Stack Developer</p>
+                    <p class="about-description about-description--center">
+                        Passionate developer with expertise in building modern web applications. I love solving complex problems and creating
+                        intuitive user experiences.
+                    </p>
+
+                    <div class="responsive-grid about-highlights">
+                        @for (item of aboutHighlights; track item.title) {
+                            <div class="highlight-card span-12 sm-span-6">
+                                <div class="highlight-icon">
+                                    <i [class]="item.icon"></i>
+                                </div>
+                                <div>
+                                    <strong>{{ item.title }}</strong>
+                                    <span>{{ item.description }}</span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </article>
+
+                <div class="what-i-do-panel">
+                    <h4>What I Do</h4>
+
+                    <div class="responsive-grid service-grid">
+                        @for (item of services; track item.title) {
+                            <article class="service-card span-12 sm-span-6 lg-span-4">
+                                <div class="service-icon">
+                                    <i [class]="item.icon"></i>
+                                </div>
+                                <strong>{{ item.title }}</strong>
+                                <span>{{ item.description }}</span>
+                            </article>
+                        }
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="stack-section">
+            <div class="container stack-content">
+                <div class="stack-header">
+                    <p class="section-kicker">Skills</p>
+                    <h3>My Skills</h3>
+                    <div class="title-underline title-underline--center"></div>
+                    <p class="stack-subtitle">A comprehensive overview of my technical skills and expertise across various technologies and tools.</p>
+                </div>
+
+                <div class="stack-group">
+                    <h4>Technologies &amp; Tools</h4>
+                    <div class="responsive-grid stack-card-grid">
+                        @for (item of primaryStack; track item.label) {
+                            <article class="stack-pill span-12 sm-span-6 lg-span-4 xl-span-2">
+                                <span class="stack-mark" [style.--skill-accent]="item.accent">{{ item.mark }}</span>
+                                <strong>{{ item.label }}</strong>
+                            </article>
+                        }
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <div class="responsive-grid stack-card-grid">
+                        @for (item of secondaryStack; track item.label) {
+                            <article class="stack-pill span-12 sm-span-6 lg-span-4 xl-span-2">
+                                <span class="stack-mark" [style.--skill-accent]="item.accent">{{ item.mark }}</span>
+                                <strong>{{ item.label }}</strong>
+                            </article>
+                        }
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container stack-content">
+                <div class="stack-header">
+                    <p class="section-kicker">Projects</p>
+                    <h3>My Projects</h3>
+                    <div class="title-underline title-underline--center"></div>
+                    <p class="stack-subtitle">A collection of projects I&apos;ve worked on, showcasing my skills and experience.</p>
+                </div>
+
+                <div class="responsive-grid project-grid">
+                    @for (item of projects; track item.title) {
+                        <article class="project-card span-12 lg-span-6">
+                            <div class="project-preview" [class]="item.previewClass" [class.project-preview--image]="item.previewImage">
+                                @if (item.previewImage) {
+                                    <img class="project-preview__image" [src]="item.previewImage" [alt]="item.title + ' preview'" />
+                                }
+                                <div class="project-preview__badge">Featured</div>
+                                @if (!item.previewImage) {
+                                    <div class="project-preview__copy">
+                                        <span class="project-preview__eyebrow">{{ item.category }}</span>
+                                        <strong>{{ item.title }}</strong>
+                                    </div>
+                                }
+                            </div>
+
+                            <div class="project-body">
+                                <div class="project-meta">
+                                    <h4>{{ item.title }}</h4>
+                                    <span class="project-type">{{ item.category }}</span>
+                                </div>
+
+                                <p>{{ item.description }}</p>
+
+                                <div class="project-tags">
+                                    @for (tag of item.tags; track tag) {
+                                        <span class="project-tag">{{ tag }}</span>
+                                    }
+                                </div>
+
+                                <div class="project-links">
+                                    <button class="project-link" type="button">
+                                        <i class="pi pi-github"></i>
+                                        Code
+                                    </button>
+                                    <button class="project-link" type="button">
+                                        <i class="pi pi-external-link"></i>
+                                        Live Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    }
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="certificates-section">
+            <div class="container stack-content">
+                <div class="stack-header">
+                    <p class="section-kicker">Certificates</p>
+                    <h3>Certificates &amp; Achievements</h3>
+                    <div class="title-underline title-underline--center"></div>
+                    <p class="stack-subtitle">
+                        Professional certifications and achievements that validate my expertise and commitment to continuous learning.
+                    </p>
+                </div>
+
+                <div class="responsive-grid certificate-grid">
+                    @for (item of certificates; track item.title) {
+                        <article class="certificate-card span-12 lg-span-6">
+                            <img class="certificate-image" [src]="item.image" [alt]="item.title + ' certificate'" />
+
+                            <div class="certificate-body">
+                                <h4>{{ item.title }}</h4>
+                                <p class="certificate-issuer">{{ item.issuer }}</p>
+
+                                <p class="certificate-date">
+                                    <i class="pi pi-calendar"></i>
+                                    {{ item.date }}
+                                </p>
+
+                                <p class="certificate-description">{{ item.description }}</p>
+
+                                <div class="certificate-tags">
+                                    @for (tag of item.tags; track tag) {
+                                        <span class="certificate-tag">{{ tag }}</span>
+                                    }
+                                </div>
+
+                                <button class="certificate-link" type="button">
+                                    <i class="pi pi-external-link"></i>
+                                    View Credential
+                                </button>
+                            </div>
+                        </article>
+                    }
+                </div>
+
+                <div class="responsive-grid certificate-stats-card">
+                    @for (item of certificateStats; track item.label) {
+                        <div class="certificate-stat span-12 sm-span-4">
+                            <strong>{{ item.value }}</strong>
+                            <span>{{ item.label }}</span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container stack-content">
+                <div class="stack-header">
+                    <p class="section-kicker">Contact</p>
+                    <h3>Get In Touch</h3>
+                    <div class="title-underline title-underline--center"></div>
+                    <p class="stack-subtitle">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+                </div>
+
+                <div class="responsive-grid contact-grid">
+                    <div class="contact-info-column span-12 lg-span-6">
+                        <h4>Contact Information</h4>
+
+                        <div class="contact-info-list">
+                            @for (item of contactItems; track item.title) {
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i [class]="item.icon"></i>
+                                    </div>
+                                    <div>
+                                        <strong>{{ item.title }}</strong>
+                                        <p>{{ item.value }}</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="contact-cta-card">
+                            <h4>Let&apos;s Work Together</h4>
+                            <p>I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                            <div class="contact-cta-points">
+                                <span><i class="pi pi-check"></i> Available for freelance projects</span>
+                                <span><i class="pi pi-check"></i> Open to full-time opportunities</span>
+                                <span><i class="pi pi-check"></i> Happy to collaborate on open source</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card span-12 lg-span-6">
+                        <h4>Send Me a Message</h4>
+
+                        <form class="contact-form">
+                            <label>
+                                <span>Name *</span>
+                                <input type="text" placeholder="Your name" />
+                            </label>
+
+                            <label>
+                                <span>Email *</span>
+                                <input type="email" placeholder="your.email@example.com" />
+                            </label>
+
+                            <label>
+                                <span>Subject *</span>
+                                <input type="text" placeholder="What&apos;s this about?" />
+                            </label>
+
+                            <label>
+                                <span>Message *</span>
+                                <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+                            </label>
+
+                            <button class="button-primary contact-submit" type="submit">
+                                Send Message
+                                <i class="pi pi-send"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container responsive-grid footer-grid">
+            <div class="span-12 md-span-4">
+                <h4>About</h4>
+                <p>A modern developer portfolio showcasing projects, skills, and achievements.</p>
+            </div>
+            <div class="span-12 md-span-4">
+                <h4>Quick Links</h4>
+                <button class="footer-link" type="button" (click)="navigateToSection('home')">Home</button>
+            </div>
+            <div class="span-12 md-span-4">
+                <h4>Connect</h4>
+                <div class="footer-socials">
+                    <span><i class="pi pi-facebook"></i></span>
+                    <span><i class="pi pi-linkedin"></i></span>
+                    <span><i class="pi pi-github"></i></span>
+                    <span><i class="pi pi-envelope"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">&copy; {{ currentYear }} Brian Lim</div>
+    </footer>
+</div>

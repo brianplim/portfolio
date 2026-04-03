@@ -1,0 +1,17 @@
+<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="520" rx="20" fill="#ffffff"/>
+  <rect x="24" y="24" width="852" height="472" rx="16" fill="#fff" stroke="#E5E7EB"/>
+  <text x="450" y="84" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="34" font-weight="800">CERTIFICATE OF COMPLETION</text>
+  <text x="450" y="124" text-anchor="middle" fill="#9CA3AF" font-family="Arial, sans-serif" font-size="18">This certifies that</text>
+  <text x="450" y="178" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="40" font-weight="700">Brian Lim</text>
+  <text x="450" y="218" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="18">has successfully completed the professional certification course for</text>
+  <text x="450" y="282" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="32" font-weight="700">Certified HTML Developer</text>
+  <circle cx="450" cy="342" r="36" fill="#1F2937"/>
+  <circle cx="450" cy="342" r="28" fill="#F59E0B"/>
+  <text x="450" y="350" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="800">HTML</text>
+  <text x="450" y="414" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="16">W3Schools Certification Program</text>
+  <line x1="140" y1="438" x2="300" y2="438" stroke="#111827" stroke-width="2"/>
+  <line x1="600" y1="438" x2="760" y2="438" stroke="#111827" stroke-width="2"/>
+  <text x="220" y="462" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="14">Date Issued</text>
+  <text x="680" y="462" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="14">Authorized Signature</text>
+</svg>

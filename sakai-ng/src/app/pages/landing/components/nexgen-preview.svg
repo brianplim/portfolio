@@ -1,0 +1,74 @@
+<svg width="1310" height="694" viewBox="0 0 1310 694" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1310" y2="694" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090E1F"/>
+      <stop offset="0.52" stop-color="#171132"/>
+      <stop offset="1" stop-color="#0A1325"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(657 252) rotate(90) scale(280 420)">
+      <stop stop-color="#3A1D6D" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#3A1D6D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headline" x1="516" y1="336" x2="884" y2="336" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4F7CFF"/>
+    </linearGradient>
+    <linearGradient id="button" x1="0" y1="0" x2="174" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4F7CFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1310" height="694" rx="26" fill="url(#bg)"/>
+  <rect width="1310" height="694" rx="26" fill="url(#glow)"/>
+
+  <g opacity="0.98">
+    <rect x="102" y="47" width="34" height="34" rx="9" fill="url(#button)"/>
+    <path d="M117 57L124 64L117 71" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M124 64L121 76" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="147" y="73" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="700">NexGen</text>
+  </g>
+
+  <g fill="#9CA3AF" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">
+    <text x="548" y="67">Features</text>
+    <text x="658" y="67">Testimonials</text>
+    <text x="760" y="67">Pricing</text>
+  </g>
+
+  <rect x="1028" y="45" width="1" height="43" fill="#243047"/>
+  <circle cx="1070" cy="66" r="8" stroke="#121826" stroke-width="2"/>
+  <line x1="1070" y1="54" x2="1070" y2="50" stroke="#121826" stroke-width="2" stroke-linecap="round"/>
+  <line x1="1070" y1="78" x2="1070" y2="82" stroke="#121826" stroke-width="2" stroke-linecap="round"/>
+  <line x1="1058" y1="66" x2="1054" y2="66" stroke="#121826" stroke-width="2" stroke-linecap="round"/>
+  <line x1="1082" y1="66" x2="1086" y2="66" stroke="#121826" stroke-width="2" stroke-linecap="round"/>
+  <rect x="1094" y="43" width="110" height="40" rx="20" fill="#F3F4F6"/>
+  <text x="1149" y="68" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Get Started</text>
+
+  <rect x="561" y="149" width="188" height="34" rx="17" fill="#24143E" stroke="#41216C"/>
+  <circle cx="580" cy="166" r="4" fill="#7C3AED"/>
+  <text x="594" y="171" fill="#8B5CF6" font-family="Arial, sans-serif" font-size="13">Introducing NexGen 2.0</text>
+
+  <text x="655" y="277" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="68" font-weight="800" text-anchor="middle">Ship Faster.</text>
+  <text x="655" y="356" fill="url(#headline)" font-family="Arial, sans-serif" font-size="68" font-weight="800" text-anchor="middle">Scale Smarter.</text>
+
+  <text x="655" y="414" fill="#94A3B8" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">The all-in-one platform to manage your team, track analytics,</text>
+  <text x="655" y="446" fill="#94A3B8" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">and build products users love. Designed for modern software</text>
+  <text x="655" y="478" fill="#94A3B8" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">teams.</text>
+
+  <rect x="470" y="529" width="174" height="48" rx="24" fill="url(#button)"/>
+  <text x="557" y="559" fill="white" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Start for free</text>
+  <path d="M603 547L611 553L603 559" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="659" y="529" width="176" height="48" rx="24" fill="#111A2B" stroke="#223049"/>
+  <polygon points="695,547 695,560 705,553.5" fill="none" stroke="#D1D5DB" stroke-width="2" stroke-linejoin="round"/>
+  <text x="746" y="559" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Watch Demo</text>
+
+  <g opacity="0.97">
+    <rect x="338" y="644" width="632" height="122" rx="24" fill="#151D2D" stroke="#29364F"/>
+    <circle cx="368" cy="670" r="6" fill="#FB7185"/>
+    <circle cx="386" cy="670" r="6" fill="#FBBF24"/>
+    <circle cx="404" cy="670" r="6" fill="#4ADE80"/>
+    <rect x="575" y="658" width="204" height="25" rx="7" fill="#1A2335" stroke="#2C3850"/>
+    <text x="677" y="675" fill="#8B97AE" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">nexgen.app/dashboard</text>
+  </g>
+</svg>

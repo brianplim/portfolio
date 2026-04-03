@@ -1,0 +1,49 @@
+<svg width="1536" height="1024" viewBox="0 0 1536 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1536" height="1024" fill="#FFFFFF"/>
+
+  <g opacity="0.1">
+    <text x="390" y="355" fill="#10B981" font-family="Arial, sans-serif" font-size="270" font-weight="700">W</text>
+    <text x="1015" y="355" fill="#10B981" font-family="Arial, sans-serif" font-size="190" font-weight="700">3</text>
+    <text x="360" y="810" fill="#10B981" font-family="Arial, sans-serif" font-size="200" font-weight="700">schools</text>
+  </g>
+
+  <text x="768" y="90" text-anchor="middle" fill="#10B981" font-family="Arial, sans-serif" font-size="72" font-weight="700">W³</text>
+  <text x="768" y="145" text-anchor="middle" fill="#10B981" font-family="Arial, sans-serif" font-size="34" font-weight="700">schools</text>
+
+  <rect x="1348" y="28" width="94" height="94" fill="#111111"/>
+  <rect x="1358" y="38" width="18" height="18" fill="#FFFFFF"/>
+  <rect x="1386" y="38" width="18" height="18" fill="#FFFFFF"/>
+  <rect x="1414" y="38" width="18" height="18" fill="#FFFFFF"/>
+  <rect x="1358" y="66" width="18" height="18" fill="#FFFFFF"/>
+  <rect x="1414" y="66" width="18" height="18" fill="#FFFFFF"/>
+  <rect x="1386" y="94" width="18" height="18" fill="#FFFFFF"/>
+  <rect x="1358" y="122" width="18" height="18" fill="#FFFFFF"/>
+  <rect x="1386" y="122" width="18" height="18" fill="#FFFFFF"/>
+  <rect x="1414" y="122" width="18" height="18" fill="#FFFFFF"/>
+  <text x="1395" y="160" text-anchor="middle" fill="#111111" font-family="Arial, sans-serif" font-size="18">Scan to verify</text>
+
+  <text x="768" y="228" text-anchor="middle" fill="#000000" font-family="Arial, sans-serif" font-size="64" font-weight="800">CERTIFICATE OF COMPLETION</text>
+  <text x="768" y="320" text-anchor="middle" fill="#111111" font-family="Arial, sans-serif" font-size="34">This certifies that</text>
+  <text x="768" y="392" text-anchor="middle" fill="#000000" font-family="Arial, sans-serif" font-size="58" font-weight="800">Brian Lim</text>
+  <text x="768" y="452" text-anchor="middle" fill="#111111" font-family="Arial, sans-serif" font-size="28">has passed the W3schools Laravel Certification exam and is hereby declared a</text>
+
+  <g>
+    <circle cx="768" cy="566" r="60" fill="#E7B85D"/>
+    <circle cx="768" cy="566" r="50" fill="#223047"/>
+    <circle cx="768" cy="566" r="42" fill="#1F2937"/>
+    <rect x="709" y="548" width="118" height="36" rx="6" fill="#1F2937"/>
+    <text x="768" y="572" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="700">PROFESSIONAL</text>
+  </g>
+
+  <text x="768" y="742" text-anchor="middle" fill="#000000" font-family="Arial, sans-serif" font-size="56" font-weight="800">Certified Laravel Developer</text>
+  <text x="768" y="806" text-anchor="middle" fill="#111111" font-family="Arial, sans-serif" font-size="26">The candidate has passed the exam at the Professional level.</text>
+  <text x="768" y="852" text-anchor="middle" fill="#111111" font-family="Arial, sans-serif" font-size="22">Issued February 12, 2024</text>
+
+  <text x="86" y="956" fill="#111111" font-family="Arial, sans-serif" font-size="18">Verify completion at:</text>
+  <text x="86" y="981" fill="#111111" font-family="Arial, sans-serif" font-size="18">https://verify.w3schools.com/1MNNAKGD43</text>
+
+  <path d="M1131 813C1154 791 1177 811 1200 789C1220 770 1242 795 1264 781C1285 767 1300 798 1328 782" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+  <line x1="1130" y1="872" x2="1398" y2="872" stroke="#111111" stroke-width="4"/>
+  <text x="1264" y="898" text-anchor="middle" fill="#111111" font-family="Arial, sans-serif" font-size="22">Thomas Thorsell-Arntsen</text>
+  <text x="1264" y="928" text-anchor="middle" fill="#111111" font-family="Arial, sans-serif" font-size="18">for W3schools.com</text>
+</svg>
